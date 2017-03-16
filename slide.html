@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #pyramid {
+            line-height: 0;
+            font-size: 30px;
+        }
+
+        body {
+            font-family: "Courier New", monospace;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pyramid Slide</h1>
+
+
+    <select id="supaoptions" onchange="drawPyramid()">
+      <option value="*">*</option>
+      <option value="▧">▧</option>
+      <option value="$">$</option>
+      <option value="▚">▚</option>
+      <option value="█">█</option>
+      <option value="░">░</option>
+    </select>
+    How High?
+    <input id="rangey" type="range" onchange="drawPyramid()" name="points" min="0" max="30">
+
+  </form>
+
+    <br><br>
+
+    <div id="pyramid"></div>
+
+    <script src="slide.js"></script>
+</body>
+</html>
